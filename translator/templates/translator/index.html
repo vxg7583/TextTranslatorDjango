@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style>
+          .translate-box {
+      width: 500px;
+      height: 800px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin: 10px 5px;
+      padding: 4px;
+      margin-right:auto;
+      margin-left:auto;
+    }
+    p{
+      text-align : center;
+      font-family: Times New Roman;
+    }
+    .text-box-card{
+      width: 300px;
+      height: 200px;
+    }
+
+  .button1{
+    position:relative;
+
+  }
+  .overallbody{
+    text-align:center;
+  }
+
+    </style>
+    <meta charset="utf-8">
+    <title> TRANSALTE A BLOB OF TEXT </title>
+  </head>
+  <body class = "overallbody">
+    <div class="translate-box">
+      <p> <em> Hello I am your translate box. </em></p>
+      <hr>
+      <br>
+      <form class="" action="{% url 'index' %}" method="get">
+        {% csrf_token %}
+
+        <p class:'textbox'> Paste Text Here : <br>
+        <!--input type="text" class='text-box-card'--> </p>
+        <textarea name="message", class="text-box-card"></textarea><br>
+
+        <button type="submit" class='button1' name='print_btn'>Translate Text</button>
+
+      </form>
+      <br>
+      <br>
+      <hr>
+
+      <p> <em> Your Translated Text </em></p>
+      <hr>
+      <br>
+
+        <p>{{ queryset }}</p><br>
+
+
+    </div>
+  </body>
+</html>
