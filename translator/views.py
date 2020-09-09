@@ -11,7 +11,7 @@ import requests
 
 class Translate(ListView):
     def index(request):
-        
+
         if request.GET.get('message'):
             queryset = request.GET.get('message')
             headers = {'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'AndroidTranslate/5.3.0.RC02.130475354-53000263 5.1 phone TRANSLATE_OPM5_TEST_1'}
