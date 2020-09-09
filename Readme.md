@@ -1,0 +1,2 @@
+Source LANGUAGE = ENGLISH (EN)
+Target LANGUAGE = HINDI(HI)
