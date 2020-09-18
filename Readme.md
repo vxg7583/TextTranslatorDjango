@@ -8,3 +8,5 @@ To run on Windows
 ```
 run.bat
 ```
+And just open the url that shows after executing the command in a browser
+Enjoy...
